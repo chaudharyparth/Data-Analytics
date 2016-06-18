@@ -1,0 +1,29 @@
+.main-header .logo {
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#messsageSupport1 {
+  font-family :"comic-sans","Times New Roman", serif;
+  font-weight : bold;
+}
+
+#messsageSupport2 {
+  font-family :"comic-sans","Times New Roman", serif;
+  font-weight : bold;
+  margin-left : 60px;
+}
+
+.content-wrapper, .right-side {
+  background-image : url('cool2.jpg');
+}
+
+.skin-blue .sidebar-menu>.active>a, .skin-blue .sidebar-menu>li:hover>a {
+  background : #3c8dbc;
+  border-left-color: rgb(255, 255, 255);
+}
+
+.box-body{
+  font-family : 'Source Sans Pro';
+}
