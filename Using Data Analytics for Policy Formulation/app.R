@@ -50,8 +50,8 @@ ui <- dashboardPage(skin = "blue",
       menuItem("Residual Histograms", tabName = "residualhistogram", icon = icon("bar-chart")),
       menuItem("Residual Scatter Plots", tabName = "residualscatterPlot", icon = icon("line-chart")),
       menuItem("Source code", icon = icon("file-code-o"), 
-               href = "https://github.com/chaudharyparth/R.git"),
-      menuItem("Ping us!", tabName = "message", icon = icon("paper-plane"))
+               href = "https://github.com/chaudharyparth/Data-Analytics.git"),
+      #menuItem("Ping us!", tabName = "message", icon = icon("paper-plane"))
     )
   ),
   ## Body content
@@ -328,7 +328,7 @@ variables (or 'predictors').",
 typical value of the dependent variable (or 'criterion variable') changes when any one of the
 independent variables is varied, while the other independent variables are held fixed. Most
 commonly, regression analysis estimates the conditional expectation of the dependent variable
-given the independent variables – that is, the average value of the dependent variable when the
+given the independent variables â that is, the average value of the dependent variable when the
 independent variables are fixed.",
                   HTML("<br/>"),
 "Less commonly, the focus is on a quantile, or other location
@@ -406,13 +406,13 @@ having the best fit without excess/unnecessary terms.",
                   title = "P value", status = "info",collapsed = TRUE, collapsible = TRUE, solidHeader = TRUE,
                   "p-value is defined as the measure of strength of evidence against hypothesis.For typical analysis, a widely used interpretation is :",
                   HTML("<br/><ol>"),
-                  "A small p-value (≤ α) indicates strong evidence for the null hypothesis, so it is rejected.",
+                  "A small p-value (â¤ Î±) indicates strong evidence for the null hypothesis, so it is rejected.",
                   HTML("</ol><ol>"),
-                  "A large p-value (> α) indicates weak evidence for the null hypothesis (fail to reject).",
+                  "A large p-value (> Î±) indicates weak evidence for the null hypothesis (fail to reject).",
                   HTML("</ol><ol>"),
-                  "p-values very close to the cutoff (~ α) are considered to be marginal (need attention).",
+                  "p-values very close to the cutoff (~ Î±) are considered to be marginal (need attention).",
                   HTML("</ol>"),
-                  "α =  level of significance , generally 0.05",
+                  "Î± =  level of significance , generally 0.05",
                   tags$hr(),
                   tableOutput("pValue")
                 ),
@@ -497,29 +497,29 @@ having the best fit without excess/unnecessary terms.",
       ),
       
       # Ping Us! tab content
-      tabItem(tabName = "message",
-              fluidRow(
-                box(
-                  title = "Do Leave a message.....!", status = "success", solidHeader = TRUE,
-                  div(
-                    id = "contactForm",
-                    
-                    shinyjs::useShinyjs(),
-                    shinyjs::inlineCSS(appCSS),
-                    
-                    column(width = 6,
-                    textInput("name",labelMandatory("Full Name"),""),
-                    textInput("email",labelMandatory("Email Address"),"")
-                    ),
-                    column(width = 12,
-                    textInput("message","Your message",""),
-                    #actionButton("submit", "Submit", class = "btn-danger btn-large")
-                    HTML("<button class = 'btn btn-primary' id='submit'>Submit</button>")
-                    )
-                  )
-                )
-              )
-      )
+      # tabItem(tabName = "message",
+      #         fluidRow(
+      #           box(
+      #             title = "Do Leave a message.....!", status = "success", solidHeader = TRUE,
+      #             div(
+      #               id = "contactForm",
+      #               
+      #               shinyjs::useShinyjs(),
+      #               shinyjs::inlineCSS(appCSS),
+      #               
+      #               column(width = 6,
+      #               textInput("name",labelMandatory("Full Name"),""),
+      #               textInput("email",labelMandatory("Email Address"),"")
+      #               ),
+      #               column(width = 12,
+      #               textInput("message","Your message",""),
+      #               #actionButton("submit", "Submit", class = "btn-danger btn-large")
+      #               HTML("<button class = 'btn btn-primary' id='submit'>Submit</button>")
+      #               )
+      #             )
+      #           )
+      #         )
+      # )
       )
       
     )
