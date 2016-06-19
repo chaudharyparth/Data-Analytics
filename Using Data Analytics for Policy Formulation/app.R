@@ -494,7 +494,7 @@ having the best fit without excess/unnecessary terms.",
                   div(class="span6",plotOutput('residuals_scatter'))
                 )
               )
-      ),
+      )
       
       # Ping Us! tab content
       # tabItem(tabName = "message",
