@@ -50,7 +50,7 @@ ui <- dashboardPage(skin = "blue",
       menuItem("Residual Histograms", tabName = "residualhistogram", icon = icon("bar-chart")),
       menuItem("Residual Scatter Plots", tabName = "residualscatterPlot", icon = icon("line-chart")),
       menuItem("Source code", icon = icon("file-code-o"), 
-               href = "https://github.com/chaudharyparth/Data-Analytics.git"),
+               href = "https://github.com/chaudharyparth/Data-Analytics.git")
       #menuItem("Ping us!", tabName = "message", icon = icon("paper-plane"))
     )
   ),
